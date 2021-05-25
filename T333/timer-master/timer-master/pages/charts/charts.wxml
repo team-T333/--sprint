@@ -1,0 +1,17 @@
+<image class="background" src='/image/background.jpg'></image>
+<view class="title">打卡排行</view>
+<view class="item-box">
+  <view class="items">
+    <view wx:for="{{list}}"  wx:key="{{index}}"  class="item">
+      <view data-index="{{index}}" class="inner txt">
+      <i class="sno"> {{item.account}}</i>
+      <span class="item-data">
+       <i class="times"> 打卡次数:{{item.times}}</i>
+        <!-- <span class="rankxin">{{item.xin}}</span> -->
+      </span>
+      </view>
+    </view>
+  </view>
+</view><!--pages/ranking/ranking.wxml-->
+
+<navigator url="../rule/rule">查看规则</navigator>
